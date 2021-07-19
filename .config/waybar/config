@@ -1,0 +1,68 @@
+{
+	"layer": "top", //waybar displayed behind the window
+	"position": "top", //waybar is displayed at the top of the screen
+	"modules-left": [
+		"sway/workspaces",
+		"custom/right-arrow-dark"
+	],
+
+	"modules-center": [
+		"custom/left-arrow-dark",
+		"clock",
+		"custom/right-arrow-dark",
+	],
+
+	"modules-right": [
+		"custom/left-arrow-dark",
+		"disk",
+		"battery",
+	],
+
+	"sway/workspaces": {
+		"all-outputs": false,
+		"disable-scroll": true,
+		"disable-click": true,
+		"current-only": false,
+		"persistent_workspaces": {
+			"Social": ["eDP-1"], //always show workspace "Social" even if there's nothing in there
+			"Chat": ["eDP-1"],
+		},
+		"enable-bar-scroll": false,
+		"format": "{name}"
+	},
+
+
+
+	"custom/left-arrow-dark": {
+		"format": ""
+	},
+
+	"custom/right-arrow-dark": {
+		"format": ""
+	},
+	
+	"disk": {
+		"interval": 30,
+		"format": "Disk: {free}",
+		"on-click": "baobab",
+	},
+
+	"battery": {
+		"interval": 30,
+		"format": "{capacity}%{icon}",
+		"format-icons": ["🔋"],
+		"states": {
+			"Full": 100,
+			"Warning": 20,
+			"Low": 10
+		},
+		"max-length": 25
+	},
+
+	"clock": {
+		"format": "{:%h %d %A %H:%M %p}",
+		"max-length": 50,
+		"interval": 30
+	},
+}
+			

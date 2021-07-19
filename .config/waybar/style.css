@@ -1,0 +1,64 @@
+*
+{
+	font-family: monospace;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+	background: rgba(0,0,0,0);
+}
+
+window {
+    color:      rgba(0,0,0,1);
+    background: rgba(35,31,32,0);
+}
+
+window#waybar {
+	background: rgba(0,0,0,0);
+	color: rgba(255,255,255,1);
+}
+window#waybar.solo {
+    color:      rgba(217,216,216,1);
+    background: rgba(35,31,32,0);
+}
+
+#workspaces button {
+	color:	rgba(255,255,255,1);
+	background: rgba(0,0,0,1);
+	padding: 0 2px;
+}
+
+#workspaces button.urgent {
+	color: rgba(0,255,255,1);
+	background: rgba(0,0,0,1);
+}
+
+#workspaces button.focused {
+	color: rgba(0,255,255,1);
+	background: rgba(0,0,0,0);
+}
+
+#mode, #disk, #battery, #clock {
+	color:	rgba(255,255,255,1);
+	padding: 0 10px;
+	background: rgba(0,0,0,1);
+}
+
+#battery.full {
+	color:	rgba(0,0,0,0.5);
+}
+
+#battery.warning {
+	color: rgba(0,0,0,0.7);
+}
+
+#battery.low {
+	color: rgba(0,0,0,1);
+	background: rgba(255,0,0,1);
+}
+
+#custom-left-arrow-dark,
+#custom-right-arrow-dark {
+	color: rgba(0,0,0,1);
+	background: rgba(0,0,0,0);
+	padding: 0 0.1px;
+}
+
