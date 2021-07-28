@@ -27,5 +27,5 @@ sleep 10
 echo "Thank you for using the backup script!"
 echo "Ending the program now...."
 
-cd ~/Documents/dotfiles
+cd ..
 

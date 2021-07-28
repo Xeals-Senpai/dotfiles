@@ -40,6 +40,7 @@ bindsym $mod+F1 exec pcmanfm
 bindsym $mod+a exec discord 
 bindsym $alt+1 exec 'signal-desktop' 
 bindsym $alt+2 exec "virt-manager"
+bindsym $alt+3 exec "code"
 bindsym $mod+Shift+F1 exec pcmanfm
 bindsym $mod+F5 --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -

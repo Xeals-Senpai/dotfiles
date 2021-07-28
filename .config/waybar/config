@@ -15,7 +15,7 @@
 	"modules-right": [
 		"custom/left-arrow-dark",
 		"disk",
-		"battery",
+		"battery"
 	],
 
 	"sway/workspaces": {
@@ -31,14 +31,24 @@
 		"format": "{name}"
 	},
 
-
-
 	"custom/left-arrow-dark": {
-		"format": ""
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/right-arrow-dark": {
-		"format": ""
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
 	},
 	
 	"disk": {
@@ -62,7 +72,9 @@
 	"clock": {
 		"format": "{:%h %d %A %H:%M %p}",
 		"max-length": 50,
-		"interval": 30
+		"interval": 30,
+		"tooltip": true,
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
 	},
 }
 			
