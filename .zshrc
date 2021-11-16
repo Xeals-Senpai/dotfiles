@@ -28,6 +28,7 @@ source ~/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-
 
 alias cls='~/Documents/dotfiles/scripts/alias1.sh'
 alias clear='~/Documents/dotfiles/scripts/alias1.sh'
+alias ssh="kitty +kitten ssh"
 
 ## keybindings
 bindkey '^[[A' history-substring-search-up

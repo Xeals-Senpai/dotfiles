@@ -1,5 +1,3 @@
 [user]
 	name = xeals
 	email = xxZeroxxism@yahoo.co.uk
-[credential]
-	helper = cache --timeout=3600

@@ -13,7 +13,7 @@ default_floating_border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:URWGothic-Book 7
+font xft:URWGothic-Book 11
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -44,7 +44,7 @@ bindsym $alt+3 exec "teams-for-linux"
 bindsym $alt+4 exec "code"
 bindsym $mod+Shift+F1 exec pcmanfm
 bindsym $mod+F5 --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym $mod+Shift+s flameshot gui -p "/home/xeals/Documents/screenshots"
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
 focus_follows_mouse no
 
@@ -155,7 +155,7 @@ for_window [class="Code"] floating enable border normal
 for_window [class="anbox"] floating enable border pixel 3
 for_window [class="Pavucontrol"] floating enable border pixel 5
 for_window [class="jetbrains-studio"] floating enable border normal
-for_window [class="nitrogen"]floating enable border pixel 5
+for_window [app_id="rofi"] border pixel 5
 
 # reload the configuration file
 bindsym $mod+Shift+period reload
@@ -208,7 +208,7 @@ mode "resize" {
 }
 
 # Lock screen
-#bindsym $mod+l exec swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000
+bindsym $mod+l exec swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -219,17 +219,31 @@ exec --no-startup-id /usr/bin/dunst
 exec_always --no-startup-id "redshift"
 exec_always --no-startup-id "autotiling"
 exec_always --no-startup-id "discord"
-exec_always "picom"
-exec_always "nitrogen"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# sway bar configuration
 bar {
-        status_command i3status -c "~/.config/i3/i3status.conf"
+	swaybar_command waybar	
 	position top
+
+## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 	tray_output none
-	font xft:URWGothic-book 7
-	
+
+	bindsym button4 nop
+	bindsym button5 nop
+	strip_workspace_numbers yes
+
+    colors {
+        background #000000
+        statusline #00ff00
+        separator  #000000
+
+#                     	    border  backgr  text
+        focused_workspace  #ffffff #000000 #00FF00
+        active_workspace   #00ff00 #000000 #00FF00
+        inactive_workspace #00ff00 #000000 #00FF00
+        binding_mode       #16a085 #000000 #00FF00
+        urgent_workspace   #16a085 #000000 #00FF00
+    }
 }
 
 #################################
@@ -239,6 +253,9 @@ bar {
 # Set inner/outer gaps
 gaps inner 5
 gaps outer 14
+
+# smart gaps and border
+smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -278,13 +295,24 @@ mode "$mode_gaps_outer" {
 }
 
 # opens certain workspaces into the second monitor
-workspace 1 output DP-2
-workspace 2 output DP-0
-workspace "Social" output DP-2
-workspace "Web" output DP-0
+workspace 1 output eDP-1
+workspace 2 output DP-1
+workspace "Social" output eDP-1
+workspace "Web" output DP-1
 
+# Display setup
+output eDP-1 {
+	pos 0 0 
+	res 1920x1080
+	background "~/Documents/Pictures/ff7-moon.jpg" center
+}
+output DP-1 {
+	pos 1920 0 
+	res 1920x1080
+	background "~/Documents/Pictures/gundam.jpg" center
+}
 #output eDP-1 background "~/Documents/Pictures/ff7-moon.jpg" center
-#output DP-1 background "~/Documents/Pictures/gundam.jpg" center
+#output HDMI-A-1 background "~/Documents/Pictures/gundam.jpg" center
  
 # moves the workspace between the two monitors
 bindsym $mod+Shift+bracketright move workspace to output right
@@ -294,11 +322,13 @@ bindsym $mod+Shift+bracketleft move workspace to output left
 for_window [workspace=$wsweb] layout tabbed
 for_window [workspace=$wschat] layout tabbed
 
-# keyboard layout
-exec setxkbmap -layout gb
- 
+# ------- Hardware config ------- #
+input type:keyboard {
+	xkb_layout gb
+}
+
 # ------ open application to workspaces ------ #
-#for_window [app_id="discord"] workspace Social
-#for_window [app_id="signal"] workspace Chat
+for_window [app_id="discord"] workspace Social
+for_window [app_id="signal"] workspace Chat
 
 

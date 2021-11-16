@@ -1,8 +1,14 @@
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-	echo "Starting sway....\n"
-	echo "Loading all resources\n"
-	echo "Welcome back $USERNAME!!!\n"
-	echo "Enjoy, have fun and get cracking!\n"
-	unset DISPLAY
-	exec sway
+	echo -e "Choose between sway or i3 (1 or 2):"
+	read choice
+	case $choice in
+		1)
+			unset DISPLAY
+			exec /home/xeals/.swayenv
+			exec sway
+			;;
+		2)
+			exec startx
+			;;
+	esac
 fi
