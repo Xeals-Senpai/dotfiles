@@ -38,7 +38,7 @@ window#waybar.solo {
 	background: rgba(0,0,0,0);
 }
 
-#mode, #disk, #battery, #clock {
+#mode, #disk, #battery, #clock, #tray {
 	color:	rgba(255,255,255,1);
 	padding: 0 10px;
 	background: rgba(0,0,0,1);

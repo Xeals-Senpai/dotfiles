@@ -225,9 +225,6 @@ bar {
 	swaybar_command waybar	
 	position top
 
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-	tray_output none
-
 	bindsym button4 nop
 	bindsym button5 nop
 	strip_workspace_numbers yes
@@ -309,7 +306,7 @@ output eDP-1 {
 output DP-1 {
 	pos 1920 0 
 	res 1920x1080
-	background "~/Documents/Pictures/gundam.jpg" center
+	background "~/Documents/Pictures/darkspace4.jpg" center
 }
 #output eDP-1 background "~/Documents/Pictures/ff7-moon.jpg" center
 #output HDMI-A-1 background "~/Documents/Pictures/gundam.jpg" center

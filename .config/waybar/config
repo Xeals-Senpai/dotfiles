@@ -15,7 +15,8 @@
 	"modules-right": [
 		"custom/left-arrow-dark",
 		"disk",
-		"battery"
+		"battery",
+		"tray"
 	],
 
 	"sway/workspaces": {
@@ -75,6 +76,11 @@
 		"interval": 30,
 		"tooltip": true,
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+	},
+	
+	"tray": {
+		"icon-size": 16,
+		"spacing": 5
 	},
 }
 			

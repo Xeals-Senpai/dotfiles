@@ -4,8 +4,7 @@ if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
 	case $choice in
 		1)
 			unset DISPLAY
-			exec /home/xeals/.swayenv
-			exec sway
+			exec sway --my-next-gpu-wont-be-nvidia
 			;;
 		2)
 			exec startx

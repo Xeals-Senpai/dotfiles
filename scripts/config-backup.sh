@@ -14,10 +14,9 @@ sudo cp ~/.zlogin ~/Documents/dotfiles/
 sudo cp ~/.gitconfig ~/Documents/dotfiles/
 sudo cp /etc/pacman.conf ~/Documents/dotfiles/
 sudo cp ~/.swayenv ~/Documents/dotfiles
-sudo cp ~/.xorg.conf ~/Documents/dotfiles
+sudo cp ~/xorg.conf.new ~/Documents/dotfiles
 sudo cp ~/.Xauthority ~/Documents/dotfiles
 
-sleep 10
 echo "Done copying individuals files to dotfiles moving on to app specific folders...."
 
 sudo cp -r ~/.config/dunst ~/Documents/dotfiles/.config
@@ -28,8 +27,6 @@ sudo cp -r ~/.config/kitty ~/Documents/dotfiles/.config
 sudo cp -r ~/.config/zsh ~/Documents/dotfiles/.config
 sudo cp -r ~/.config/sway ~/Documents/dotfiles/.config
 sudo cp -r ~/.config/rofi ~/Documents/dotfiles/.config
-
-sleep 10
 
 echo "Thank you for using the backup script!"
 echo "Ending the program now...."
