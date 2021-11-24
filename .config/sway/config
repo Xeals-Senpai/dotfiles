@@ -40,7 +40,7 @@ bindsym $mod+F1 exec pcmanfm
 bindsym $mod+a exec discord 
 bindsym $alt+1 exec 'signal-desktop' 
 bindsym $alt+2 exec "whatsapp-for-linux"
-bindsym $alt+3 exec "teams-for-linux"
+bindsym $alt+3 exec "atom"
 bindsym $alt+4 exec "code"
 bindsym $mod+Shift+F1 exec pcmanfm
 bindsym $mod+F5 --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -292,10 +292,15 @@ mode "$mode_gaps_outer" {
 }
 
 # opens certain workspaces into the second monitor
+# Laptop Monitor
 workspace 1 output eDP-1
-workspace 2 output DP-1
+workspace "Chat" output eDP-1
 workspace "Social" output eDP-1
+
+# Second Monitor
+workspace 2 output DP-1
 workspace "Web" output DP-1
+
 
 # Display setup
 output eDP-1 {
