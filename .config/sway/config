@@ -293,22 +293,22 @@ mode "$mode_gaps_outer" {
 
 # opens certain workspaces into the second monitor
 # Laptop Monitor
-workspace 1 output eDP-1
-workspace "Chat" output eDP-1
-workspace "Social" output eDP-1
+workspace 1 output DP-1
+workspace "Chat" output DP-1
+workspace "Social" output DP-1
 
 # Second Monitor
-workspace 2 output DP-1
-workspace "Web" output DP-1
+workspace 2 output HDMI-A-1
+workspace "Web" output HDMI-A-1
 
 
 # Display setup
-output eDP-1 {
+output DP-1 {
 	pos 0 0 
 	res 1920x1080
 	background "~/Documents/Pictures/ff7-moon.jpg" center
 }
-output DP-1 {
+output HDMI-A-1 {
 	pos 1920 0 
 	res 1920x1080
 	background "~/Documents/Pictures/darkspace4.jpg" center
