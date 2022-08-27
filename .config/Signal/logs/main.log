@@ -407,3 +407,140 @@
 {"level":30,"time":"2022-08-27T13:12:35.029Z","pid":821,"hostname":"Forgotten-Memories","msg":"WebSocket connect - time: 692"}
 {"level":30,"time":"2022-08-27T13:12:35.029Z","pid":821,"hostname":"Forgotten-Memories","msg":"Processed count: 19"}
 {"level":30,"time":"2022-08-27T13:12:35.029Z","pid":821,"hostname":"Forgotten-Memories","msg":"Messages per second: 18.32208293153327"}
+{"level":40,"time":"2022-08-27T14:22:58.758Z","pid":719,"hostname":"Forgotten-Memories","msg":"Problem loading messages for locale en-GB"}
+{"level":40,"time":"2022-08-27T14:22:58.758Z","pid":719,"hostname":"Forgotten-Memories","msg":"Falling back to parent language: 'en'"}
+{"level":30,"time":"2022-08-27T14:22:58.767Z","pid":719,"hostname":"Forgotten-Memories","msg":"app ready"}
+{"level":30,"time":"2022-08-27T14:22:58.767Z","pid":719,"hostname":"Forgotten-Memories","msg":"starting version 5.56.0"}
+{"level":30,"time":"2022-08-27T14:22:58.768Z","pid":719,"hostname":"Forgotten-Memories","msg":"media access status [object Undefined] [object Undefined]"}
+{"level":30,"time":"2022-08-27T14:22:58.768Z","pid":719,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T14:22:58.769Z","pid":719,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T14:22:58.769Z","pid":719,"hostname":"Forgotten-Memories","msg":"got fast spellcheck setting true"}
+{"level":30,"time":"2022-08-27T14:22:58.770Z","pid":719,"hostname":"Forgotten-Memories","msg":"getSystemTraySetting had no flags and did no DB lookups. Returning DoNotUseSystemTray"}
+{"level":30,"time":"2022-08-27T14:22:58.770Z","pid":719,"hostname":"Forgotten-Memories","msg":"Initializing BrowserWindow config: {\"show\":false,\"width\":1882,\"height\":983,\"minWidth\":712,\"minHeight\":550,\"autoHideMenuBar\":false,\"titleBarStyle\":\"default\",\"titleBarOverlay\":false,\"backgroundColor\":\"#121212\",\"webPreferences\":{\"devTools\":false,\"spellcheck\":true,\"nodeIntegration\":false,\"nodeIntegrationInWorker\":false,\"contextIsolation\":false,\"preload\":\"[REDACTED]/preload.bundle.js\",\"backgroundThrottling\":false,\"enablePreferredSizeMode\":true,\"disableBlinkFeatures\":\"Accelerated2dCanvas,AcceleratedSmallCanvases\"},\"icon\":\"[REDACTED]/images/signal-logo-desktop-linux.png\",\"x\":19,\"y\":78}"}
+{"level":30,"time":"2022-08-27T14:22:58.855Z","pid":719,"hostname":"Forgotten-Memories","msg":"spellcheck: user locale: en-GB"}
+{"level":30,"time":"2022-08-27T14:22:58.855Z","pid":719,"hostname":"Forgotten-Memories","msg":"spellcheck: available spellchecker languages:  [\"af\",\"bg\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"de-DE\",\"el\",\"en\",\"en-AU\",\"en-CA\",\"en-GB\",\"en-GB-oxendict\",\"en-US\",\"es\",\"es-419\",\"es-AR\",\"es-ES\",\"es-MX\",\"es-US\",\"et\",\"fa\",\"fo\",\"fr\",\"fr-FR\",\"he\",\"hi\",\"hr\",\"hu\",\"hy\",\"id\",\"it\",\"it-IT\",\"ko\",\"lt\",\"lv\",\"nb\",\"nl\",\"pl\",\"pt\",\"pt-BR\",\"pt-PT\",\"ro\",\"ru\",\"sh\",\"sk\",\"sl\",\"sq\",\"sr\",\"sv\",\"ta\",\"tg\",\"tr\",\"uk\",\"vi\"]"}
+{"level":30,"time":"2022-08-27T14:22:58.855Z","pid":719,"hostname":"Forgotten-Memories","msg":"spellcheck: setting languages to:  [\"en-GB\"]"}
+{"level":30,"time":"2022-08-27T14:22:58.864Z","pid":719,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T14:22:58.871Z","pid":719,"hostname":"Forgotten-Memories","msg":"MainSQL: updateSchema:\n  Current user_version: 66;\n  Most recent db schema: 66;\n  SQLite version: 3.37.2;\n  SQLCipher version: 4.5.1 community;\n  (deprecated) schema_version: 288;\n"}
+{"level":30,"time":"2022-08-27T14:22:58.871Z","pid":719,"hostname":"Forgotten-Memories","msg":"got fast spellcheck setting true"}
+{"level":30,"time":"2022-08-27T14:22:58.881Z","pid":719,"hostname":"Forgotten-Memories","msg":"System tray service: created"}
+{"level":30,"time":"2022-08-27T14:22:58.881Z","pid":719,"hostname":"Forgotten-Memories","msg":"System tray service: updating main window. Previously, there was not a window, and now there is"}
+{"level":30,"time":"2022-08-27T14:22:58.881Z","pid":719,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2022-08-27T14:22:58.882Z","pid":719,"hostname":"Forgotten-Memories","msg":"Begin ensuring permissions"}
+{"level":30,"time":"2022-08-27T14:22:58.886Z","pid":719,"hostname":"Forgotten-Memories","msg":"Ensuring file permissions for 4 files"}
+{"level":30,"time":"2022-08-27T14:22:58.887Z","pid":719,"hostname":"Forgotten-Memories","msg":"Finish ensuring permissions in 4ms"}
+{"level":30,"time":"2022-08-27T14:22:59.913Z","pid":719,"hostname":"Forgotten-Memories","msg":"main window is ready-to-show"}
+{"level":30,"time":"2022-08-27T14:22:59.913Z","pid":719,"hostname":"Forgotten-Memories","msg":"showing main window"}
+{"level":30,"time":"2022-08-27T14:22:59.913Z","pid":719,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2022-08-27T14:23:00.174Z","pid":719,"hostname":"Forgotten-Memories","msg":"sending `database-ready`"}
+{"level":30,"time":"2022-08-27T14:23:00.227Z","pid":719,"hostname":"Forgotten-Memories","msg":"Prevent display sleep service: allowing display sleep"}
+{"level":30,"time":"2022-08-27T14:23:00.229Z","pid":719,"hostname":"Forgotten-Memories","msg":"updater/start: Updates disabled - not starting new version checks"}
+{"level":30,"time":"2022-08-27T14:23:00.252Z","pid":719,"hostname":"Forgotten-Memories","msg":"App loaded - time: 1487"}
+{"level":30,"time":"2022-08-27T14:23:00.252Z","pid":719,"hostname":"Forgotten-Memories","msg":"SQL init - time: 106"}
+{"level":30,"time":"2022-08-27T14:23:00.252Z","pid":719,"hostname":"Forgotten-Memories","msg":"Preload - time: 740"}
+{"level":30,"time":"2022-08-27T14:23:00.252Z","pid":719,"hostname":"Forgotten-Memories","msg":"WebSocket connect - time: -1661610179842"}
+{"level":30,"time":"2022-08-27T14:23:00.252Z","pid":719,"hostname":"Forgotten-Memories","msg":"Processed count: 0"}
+{"level":30,"time":"2022-08-27T14:23:00.252Z","pid":719,"hostname":"Forgotten-Memories","msg":"Messages per second: 0"}
+{"level":40,"time":"2022-08-27T17:19:30.921Z","pid":814,"hostname":"Forgotten-Memories","msg":"Problem loading messages for locale en-GB"}
+{"level":40,"time":"2022-08-27T17:19:30.921Z","pid":814,"hostname":"Forgotten-Memories","msg":"Falling back to parent language: 'en'"}
+{"level":30,"time":"2022-08-27T17:19:30.930Z","pid":814,"hostname":"Forgotten-Memories","msg":"app ready"}
+{"level":30,"time":"2022-08-27T17:19:30.931Z","pid":814,"hostname":"Forgotten-Memories","msg":"starting version 5.56.0"}
+{"level":30,"time":"2022-08-27T17:19:30.931Z","pid":814,"hostname":"Forgotten-Memories","msg":"media access status [object Undefined] [object Undefined]"}
+{"level":30,"time":"2022-08-27T17:19:30.931Z","pid":814,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:19:30.932Z","pid":814,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:19:30.932Z","pid":814,"hostname":"Forgotten-Memories","msg":"got fast spellcheck setting true"}
+{"level":30,"time":"2022-08-27T17:19:30.933Z","pid":814,"hostname":"Forgotten-Memories","msg":"getSystemTraySetting had no flags and did no DB lookups. Returning DoNotUseSystemTray"}
+{"level":30,"time":"2022-08-27T17:19:30.933Z","pid":814,"hostname":"Forgotten-Memories","msg":"Initializing BrowserWindow config: {\"show\":false,\"width\":1882,\"height\":983,\"minWidth\":712,\"minHeight\":550,\"autoHideMenuBar\":false,\"titleBarStyle\":\"default\",\"titleBarOverlay\":false,\"backgroundColor\":\"#121212\",\"webPreferences\":{\"devTools\":false,\"spellcheck\":true,\"nodeIntegration\":false,\"nodeIntegrationInWorker\":false,\"contextIsolation\":false,\"preload\":\"[REDACTED]/preload.bundle.js\",\"backgroundThrottling\":false,\"enablePreferredSizeMode\":true,\"disableBlinkFeatures\":\"Accelerated2dCanvas,AcceleratedSmallCanvases\"},\"icon\":\"[REDACTED]/images/signal-logo-desktop-linux.png\",\"x\":19,\"y\":78}"}
+{"level":30,"time":"2022-08-27T17:19:31.026Z","pid":814,"hostname":"Forgotten-Memories","msg":"spellcheck: user locale: en-GB"}
+{"level":30,"time":"2022-08-27T17:19:31.026Z","pid":814,"hostname":"Forgotten-Memories","msg":"spellcheck: available spellchecker languages:  [\"af\",\"bg\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"de-DE\",\"el\",\"en\",\"en-AU\",\"en-CA\",\"en-GB\",\"en-GB-oxendict\",\"en-US\",\"es\",\"es-419\",\"es-AR\",\"es-ES\",\"es-MX\",\"es-US\",\"et\",\"fa\",\"fo\",\"fr\",\"fr-FR\",\"he\",\"hi\",\"hr\",\"hu\",\"hy\",\"id\",\"it\",\"it-IT\",\"ko\",\"lt\",\"lv\",\"nb\",\"nl\",\"pl\",\"pt\",\"pt-BR\",\"pt-PT\",\"ro\",\"ru\",\"sh\",\"sk\",\"sl\",\"sq\",\"sr\",\"sv\",\"ta\",\"tg\",\"tr\",\"uk\",\"vi\"]"}
+{"level":30,"time":"2022-08-27T17:19:31.026Z","pid":814,"hostname":"Forgotten-Memories","msg":"spellcheck: setting languages to:  [\"en-GB\"]"}
+{"level":30,"time":"2022-08-27T17:19:31.037Z","pid":814,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:19:31.046Z","pid":814,"hostname":"Forgotten-Memories","msg":"MainSQL: updateSchema:\n  Current user_version: 66;\n  Most recent db schema: 66;\n  SQLite version: 3.37.2;\n  SQLCipher version: 4.5.1 community;\n  (deprecated) schema_version: 288;\n"}
+{"level":30,"time":"2022-08-27T17:19:31.046Z","pid":814,"hostname":"Forgotten-Memories","msg":"got fast spellcheck setting true"}
+{"level":30,"time":"2022-08-27T17:19:31.056Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: created"}
+{"level":30,"time":"2022-08-27T17:19:31.056Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: updating main window. Previously, there was not a window, and now there is"}
+{"level":30,"time":"2022-08-27T17:19:31.056Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2022-08-27T17:19:31.057Z","pid":814,"hostname":"Forgotten-Memories","msg":"Begin ensuring permissions"}
+{"level":30,"time":"2022-08-27T17:19:31.061Z","pid":814,"hostname":"Forgotten-Memories","msg":"Ensuring file permissions for 4 files"}
+{"level":30,"time":"2022-08-27T17:19:31.062Z","pid":814,"hostname":"Forgotten-Memories","msg":"Finish ensuring permissions in 5ms"}
+{"level":30,"time":"2022-08-27T17:19:31.886Z","pid":814,"hostname":"Forgotten-Memories","msg":"main window is ready-to-show"}
+{"level":30,"time":"2022-08-27T17:19:31.886Z","pid":814,"hostname":"Forgotten-Memories","msg":"showing main window"}
+{"level":30,"time":"2022-08-27T17:19:31.886Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2022-08-27T17:19:32.134Z","pid":814,"hostname":"Forgotten-Memories","msg":"sending `database-ready`"}
+{"level":30,"time":"2022-08-27T17:19:32.186Z","pid":814,"hostname":"Forgotten-Memories","msg":"Prevent display sleep service: allowing display sleep"}
+{"level":30,"time":"2022-08-27T17:19:32.796Z","pid":814,"hostname":"Forgotten-Memories","msg":"updater/start: Updates disabled - not starting new version checks"}
+{"level":30,"time":"2022-08-27T17:19:32.818Z","pid":814,"hostname":"Forgotten-Memories","msg":"App loaded - time: 1890"}
+{"level":30,"time":"2022-08-27T17:19:32.818Z","pid":814,"hostname":"Forgotten-Memories","msg":"SQL init - time: 118"}
+{"level":30,"time":"2022-08-27T17:19:32.818Z","pid":814,"hostname":"Forgotten-Memories","msg":"Preload - time: 500"}
+{"level":30,"time":"2022-08-27T17:19:32.818Z","pid":814,"hostname":"Forgotten-Memories","msg":"WebSocket connect - time: 658"}
+{"level":30,"time":"2022-08-27T17:19:32.818Z","pid":814,"hostname":"Forgotten-Memories","msg":"Processed count: 6"}
+{"level":30,"time":"2022-08-27T17:19:32.818Z","pid":814,"hostname":"Forgotten-Memories","msg":"Messages per second: 8.19672131147541"}
+{"level":30,"time":"2022-08-27T17:26:18.722Z","pid":814,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":983,\"x\":19,\"y\":78}"}
+{"level":30,"time":"2022-08-27T17:26:18.724Z","pid":814,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T17:26:18.724Z","pid":814,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T17:48:23.405Z","pid":814,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":983,\"x\":19,\"y\":78}"}
+{"level":30,"time":"2022-08-27T17:48:23.406Z","pid":814,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T17:48:23.406Z","pid":814,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T17:48:28.266Z","pid":814,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:48:28.269Z","pid":814,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:48:40.655Z","pid":814,"hostname":"Forgotten-Memories","msg":"close event {\"readyForShutdown\":false,\"shouldQuit\":false}"}
+{"level":30,"time":"2022-08-27T17:48:40.656Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2022-08-27T17:48:40.656Z","pid":814,"hostname":"Forgotten-Memories","msg":"requestShutdown: Requesting close of mainWindow..."}
+{"level":30,"time":"2022-08-27T17:48:40.679Z","pid":814,"hostname":"Forgotten-Memories","msg":"requestShutdown: Response received"}
+{"level":30,"time":"2022-08-27T17:48:40.681Z","pid":814,"hostname":"Forgotten-Memories","msg":"before-quit event {\"readyForShutdown\":true,\"shouldQuit\":false}"}
+{"level":30,"time":"2022-08-27T17:48:40.681Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: markShouldQuit"}
+{"level":30,"time":"2022-08-27T17:48:40.681Z","pid":814,"hostname":"Forgotten-Memories","msg":"close event {\"readyForShutdown\":true,\"shouldQuit\":true}"}
+{"level":30,"time":"2022-08-27T17:48:40.684Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: updating main window. Previously, there was a window, and now there is not"}
+{"level":30,"time":"2022-08-27T17:48:40.685Z","pid":814,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":40,"time":"2022-08-27T17:48:43.797Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Problem loading messages for locale en-GB"}
+{"level":40,"time":"2022-08-27T17:48:43.798Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Falling back to parent language: 'en'"}
+{"level":30,"time":"2022-08-27T17:48:43.807Z","pid":4871,"hostname":"Forgotten-Memories","msg":"app ready"}
+{"level":30,"time":"2022-08-27T17:48:43.807Z","pid":4871,"hostname":"Forgotten-Memories","msg":"starting version 5.56.0"}
+{"level":30,"time":"2022-08-27T17:48:43.807Z","pid":4871,"hostname":"Forgotten-Memories","msg":"media access status [object Undefined] [object Undefined]"}
+{"level":30,"time":"2022-08-27T17:48:43.807Z","pid":4871,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:48:43.808Z","pid":4871,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:48:43.808Z","pid":4871,"hostname":"Forgotten-Memories","msg":"got fast spellcheck setting true"}
+{"level":30,"time":"2022-08-27T17:48:43.809Z","pid":4871,"hostname":"Forgotten-Memories","msg":"getSystemTraySetting had no flags and did no DB lookups. Returning DoNotUseSystemTray"}
+{"level":30,"time":"2022-08-27T17:48:43.809Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Initializing BrowserWindow config: {\"show\":false,\"width\":1882,\"height\":983,\"minWidth\":712,\"minHeight\":550,\"autoHideMenuBar\":false,\"titleBarStyle\":\"default\",\"titleBarOverlay\":false,\"backgroundColor\":\"#121212\",\"webPreferences\":{\"devTools\":false,\"spellcheck\":true,\"nodeIntegration\":false,\"nodeIntegrationInWorker\":false,\"contextIsolation\":false,\"preload\":\"[REDACTED]/preload.bundle.js\",\"backgroundThrottling\":false,\"enablePreferredSizeMode\":true,\"disableBlinkFeatures\":\"Accelerated2dCanvas,AcceleratedSmallCanvases\"},\"icon\":\"[REDACTED]/images/signal-logo-desktop-linux.png\",\"x\":19,\"y\":78}"}
+{"level":30,"time":"2022-08-27T17:48:43.853Z","pid":4871,"hostname":"Forgotten-Memories","msg":"spellcheck: user locale: en-GB"}
+{"level":30,"time":"2022-08-27T17:48:43.853Z","pid":4871,"hostname":"Forgotten-Memories","msg":"spellcheck: available spellchecker languages:  [\"af\",\"bg\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"de-DE\",\"el\",\"en\",\"en-AU\",\"en-CA\",\"en-GB\",\"en-GB-oxendict\",\"en-US\",\"es\",\"es-419\",\"es-AR\",\"es-ES\",\"es-MX\",\"es-US\",\"et\",\"fa\",\"fo\",\"fr\",\"fr-FR\",\"he\",\"hi\",\"hr\",\"hu\",\"hy\",\"id\",\"it\",\"it-IT\",\"ko\",\"lt\",\"lv\",\"nb\",\"nl\",\"pl\",\"pt\",\"pt-BR\",\"pt-PT\",\"ro\",\"ru\",\"sh\",\"sk\",\"sl\",\"sq\",\"sr\",\"sv\",\"ta\",\"tg\",\"tr\",\"uk\",\"vi\"]"}
+{"level":30,"time":"2022-08-27T17:48:43.853Z","pid":4871,"hostname":"Forgotten-Memories","msg":"spellcheck: setting languages to:  [\"en-GB\"]"}
+{"level":30,"time":"2022-08-27T17:48:43.854Z","pid":4871,"hostname":"Forgotten-Memories","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2022-08-27T17:48:43.861Z","pid":4871,"hostname":"Forgotten-Memories","msg":"MainSQL: updateSchema:\n  Current user_version: 66;\n  Most recent db schema: 66;\n  SQLite version: 3.37.2;\n  SQLCipher version: 4.5.1 community;\n  (deprecated) schema_version: 288;\n"}
+{"level":30,"time":"2022-08-27T17:48:43.861Z","pid":4871,"hostname":"Forgotten-Memories","msg":"got fast spellcheck setting true"}
+{"level":30,"time":"2022-08-27T17:48:43.867Z","pid":4871,"hostname":"Forgotten-Memories","msg":"System tray service: created"}
+{"level":30,"time":"2022-08-27T17:48:43.867Z","pid":4871,"hostname":"Forgotten-Memories","msg":"System tray service: updating main window. Previously, there was not a window, and now there is"}
+{"level":30,"time":"2022-08-27T17:48:43.867Z","pid":4871,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2022-08-27T17:48:43.867Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Begin ensuring permissions"}
+{"level":30,"time":"2022-08-27T17:48:43.869Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Ensuring file permissions for 4 files"}
+{"level":30,"time":"2022-08-27T17:48:43.870Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Finish ensuring permissions in 3ms"}
+{"level":30,"time":"2022-08-27T17:48:44.576Z","pid":4871,"hostname":"Forgotten-Memories","msg":"main window is ready-to-show"}
+{"level":30,"time":"2022-08-27T17:48:44.576Z","pid":4871,"hostname":"Forgotten-Memories","msg":"showing main window"}
+{"level":30,"time":"2022-08-27T17:48:44.576Z","pid":4871,"hostname":"Forgotten-Memories","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2022-08-27T17:48:44.826Z","pid":4871,"hostname":"Forgotten-Memories","msg":"sending `database-ready`"}
+{"level":30,"time":"2022-08-27T17:48:44.872Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Prevent display sleep service: allowing display sleep"}
+{"level":30,"time":"2022-08-27T17:48:45.293Z","pid":4871,"hostname":"Forgotten-Memories","msg":"updater/start: Updates disabled - not starting new version checks"}
+{"level":30,"time":"2022-08-27T17:48:45.320Z","pid":4871,"hostname":"Forgotten-Memories","msg":"App loaded - time: 1516"}
+{"level":30,"time":"2022-08-27T17:48:45.320Z","pid":4871,"hostname":"Forgotten-Memories","msg":"SQL init - time: 57"}
+{"level":30,"time":"2022-08-27T17:48:45.320Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Preload - time: 391"}
+{"level":30,"time":"2022-08-27T17:48:45.320Z","pid":4871,"hostname":"Forgotten-Memories","msg":"WebSocket connect - time: 714"}
+{"level":30,"time":"2022-08-27T17:48:45.320Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Processed count: 0"}
+{"level":30,"time":"2022-08-27T17:48:45.320Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Messages per second: 0"}
+{"level":30,"time":"2022-08-27T17:59:44.251Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":948,\"x\":19,\"y\":113}"}
+{"level":30,"time":"2022-08-27T17:59:44.252Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T17:59:44.252Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T17:59:46.914Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":891,\"x\":19,\"y\":170}"}
+{"level":30,"time":"2022-08-27T17:59:46.914Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T17:59:46.914Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:00:00.529Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":948,\"x\":19,\"y\":113}"}
+{"level":30,"time":"2022-08-27T18:00:00.530Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:00:00.530Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:00:29.293Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":948,\"x\":19,\"y\":113}"}
+{"level":30,"time":"2022-08-27T18:00:29.293Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:00:29.293Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:00:31.155Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":891,\"x\":19,\"y\":170}"}
+{"level":30,"time":"2022-08-27T18:00:31.155Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:00:31.155Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:01:05.426Z","pid":4871,"hostname":"Forgotten-Memories","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":false,\"fullscreen\":false,\"width\":1882,\"height\":983,\"x\":19,\"y\":78}"}
+{"level":30,"time":"2022-08-27T18:01:05.427Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2022-08-27T18:01:05.427Z","pid":4871,"hostname":"Forgotten-Memories","msg":"config/set: Saved ephemeral config to disk"}

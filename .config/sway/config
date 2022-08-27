@@ -36,13 +36,13 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 #Start Applications
 bindsym $mod+Return exec firefox 
-bindsym $mod+F1 exec pcmanfm
-bindsym $mod+a exec "discord-screenaudio" 
-bindsym $alt+1 exec 'signal-desktop' 
-bindsym $alt+2 exec "whatsapp-for-linux"
-bindsym $alt+3 exec "atom"
-bindsym $alt+4 exec "code"
-bindsym $mod+Shift+F1 exec pcmanfm
+bindsym $mod+F1 exec nemo
+bindsym $alt+1 exec "discord-screenaudio" 
+bindsym $alt+2 exec 'signal-desktop' 
+#bindsym $alt+2 exec "whatsapp-for-linux"
+#bindsym $alt+3 exec "atom"
+#bindsym $alt+4 exec "code"
+#bindsym $mod+Shift+F1 exec pcmanfm
 bindsym $mod+F5 --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
