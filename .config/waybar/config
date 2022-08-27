@@ -25,8 +25,8 @@
 		"disable-click": true,
 		"current-only": false,
 		"persistent_workspaces": {
-			"Social": ["eDP-1"], //always show workspace "Social" even if there's nothing in there
-			"Chat": ["eDP-1"],
+			"Social": ["DP-1"], //always show workspace "Social" even if there's nothing in there
+			"Chat": ["DP-1"],
 		},
 		"enable-bar-scroll": false,
 		"format": "{name}"

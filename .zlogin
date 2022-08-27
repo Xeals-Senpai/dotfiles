@@ -9,5 +9,9 @@ if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
 		2)
 			exec startx
 			;;
+
+		*)	unset Display
+			exec sway
+			;;
 	esac
 fi

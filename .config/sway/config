@@ -158,6 +158,7 @@ for_window [class="anbox"] floating enable border pixel 3
 for_window [class="Pavucontrol"] floating enable border pixel 5
 for_window [class="jetbrains-studio"] floating enable border normal
 for_window [app_id="rofi"] border pixel 5
+for_window [app_id="kitty"] floating enable border pixel 50
 
 # reload the configuration file
 bindsym $mod+Shift+period reload
@@ -169,21 +170,22 @@ bindsym $mod+Shift+apostrophe restart
 bindsym $mod+Ctrl+l exec "nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-bindsym $mod+0 mode "$mode_system"
-set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
-mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+bindsym $mod+0 exec swaymsg "exit"
+#bindsym $mod+0 mode "$mode_system"
+#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+#mode "$mode_system" {
+#    bindsym l exec --no-startup-id i3exit lock, mode "default"
+#    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+#    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+#    bindsym e exec --no-startup-id i3exit logout, mode "default"
+#    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+#    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+#    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
-    # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
+#    # exit system mode: "Enter" or "Escape"
+#    bindsym Return mode "default"
+#    bindsym Escape mode "default"
+#}
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+bracketleft mode "resize"
@@ -220,8 +222,9 @@ exec --no-startup-id clipit
 exec --no-startup-id /usr/bin/dunst
 exec_always --no-startup-id "redshift"
 exec_always --no-startup-id "autotiling"
-exec_always --no-startup-id "discord-screenaudio"
-exec_always --no-startup-id "signal-desktop"
+exec swaymsg "workspace $wssocial; exec discord-screenaudio"
+exec swaymsg "workspace $wschat; exec signal-desktop"
+exec swaymsg "workspace 1"
 
 # sway bar configuration
 bar {
@@ -326,8 +329,6 @@ output DP-2 {
 	res 1920x1080
 	background "~/Documents/Pictures/gundam.jpg" center
 }
-#output eDP-1 background "~/Documents/Pictures/ff7-moon.jpg" center
-#output HDMI-A-1 background "~/Documents/Pictures/gundam.jpg" center
  
 # moves the workspace between the two monitors
 bindsym $mod+Shift+bracketright move workspace to output right
@@ -343,8 +344,8 @@ input type:keyboard {
 }
 
 # ------ open application to workspaces ------ #
-for_window [app_id="discord"] workspace Social
-for_window [app_id="signal"] workspace Chat
+#assign [app_id="de.shorsh.discord-screenaudio"] workspace $wssocial
+
 
 # ------ Miscallenous ------ #
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
