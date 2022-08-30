@@ -2,20 +2,16 @@
 	"layer": "top", //waybar displayed behind the window
 	"position": "top", //waybar is displayed at the top of the screen
 	"modules-left": [
-		"sway/workspaces",
-		"custom/right-arrow-dark"
+		"custom/firefox",
+		"sway/workspaces"
 	],
 
 	"modules-center": [
-		"custom/left-arrow-dark",
-		"clock",
-		"custom/right-arrow-dark",
+		"clock"
 	],
 
 	"modules-right": [
-		"custom/left-arrow-dark",
 		"disk",
-		"battery",
 		"tray"
 	],
 
@@ -30,26 +26,6 @@
 		},
 		"enable-bar-scroll": false,
 		"format": "{name}"
-	},
-
-	"custom/left-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/left-arrow-light": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/right-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/right-arrow-light": {
-		"format": "",
-		"tooltip": false
 	},
 	
 	"disk": {
@@ -75,12 +51,18 @@
 		"max-length": 50,
 		"interval": 30,
 		"tooltip": true,
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+		"tooltip-format": "<span color='#61afef'><big>{:%Y %B}</big>\n<tt>{calendar}</tt></span>"
 	},
 	
 	"tray": {
-		"icon-size": 16,
-		"spacing": 5
+		"spacing": 10
 	},
+
+	"custom/firefox": {
+		"format": "{icon}",
+		"on-click": "firefox www.google.co.uk",
+		"format-icons": [""],
+		"tooltip": false	
+	}
 }
 			

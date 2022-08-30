@@ -1,49 +1,52 @@
-*
-{
-	font-family: monospace;
-	font-size: 15px;
-	color: rgba(255,255,255,1);
-	background: rgba(0,0,0,0);
+* {
+	font-family: source code pro regular;
+	font-size: 9px;
 	border: none;
-	min-height: 0;
 }
 
 window {
-    color:      rgba(0,0,0,1);
-    background: rgba(35,31,32,0);
+	background-color: rgba(0,0,0,0);
 }
 
 window#waybar {
-	background: rgba(0,0,0,0);
-	color: rgba(255,255,255,1);
+	color: #abb2bf;
+	transition-property: background-color;
+	transition-duration: 0.5s;
 }
-window#waybar.solo {
-	color:      rgba(217,216,216,1);
-	background: rgba(35,31,32,0);
+
+window#waybar.hidden {
+	opacity: 0.5;
 }
 
 #workspaces button {
-	color:	rgba(255,255,255,1);
-	background: rgba(0,0,0,1);
-	padding: 0 0.1px;
+	padding: 0 5px;
+	min-width: 20px;
 }
 
 #workspaces button.urgent {
-	color: rgba(0,255,255,1);
-	background: rgba(0,0,0,1);
+	color: #e06c75;
 }
 
 #workspaces button.focused {
-	color: rgba(0,255,255,1);
-	background: rgba(0,0,0,0);
+	color: #c678dd;
 }
 
-#mode, #disk, #battery, #clock, #tray {
-	color:	rgba(255,255,255,1);
+#custom-firefox {
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+#workspaces, #custom-firefox,  #mode, #disk, #battery, #clock, #tray {
+	color: #61afef;
+	background-color: #1e222a;
 	padding: 0 10px;
-	background: rgba(0,0,0,1);
+	margin: 2px 4px 5px 4px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-radius: 90px;
+	background-clip: padding-box;
 }
 
+/*
 #battery.full {
 	color:	rgba(0,0,0,0.5);
 }
@@ -56,11 +59,13 @@ window#waybar.solo {
 	color: rgba(0,0,0,1);
 	background: rgba(255,0,0,1);
 }
+*/
 
-#custom-left-arrow-dark,
-#custom-right-arrow-dark {
-	color: rgba(0,0,0,1);
-	background: rgba(0,0,0,0);
-	padding: 5 0.1px;
-}
+/*
+	--base00 #c678dd;
+	--base01 #1r222a;
+	--base02 #abb2bf;
+	--base03 #12151d;
+	--base04 #61afef;
+*/
 

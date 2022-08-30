@@ -3,11 +3,11 @@
   "spell-check": true,
   "window": {
     "maximized": true,
-    "autoHideMenuBar": false,
+    "autoHideMenuBar": true,
     "fullscreen": false,
-    "width": 1882,
-    "height": 983,
-    "x": 19,
-    "y": 78
+    "width": 1920,
+    "height": 1014,
+    "x": 0,
+    "y": 66
   }
 }

@@ -171,21 +171,6 @@ bindsym $mod+Ctrl+l exec "nagbar -t warning -m 'You pressed the exit shortcut. D
 
 # Set shut down, restart and locking features
 bindsym $mod+0 exec swaymsg "exit"
-#bindsym $mod+0 mode "$mode_system"
-#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
-#mode "$mode_system" {
-#    bindsym l exec --no-startup-id i3exit lock, mode "default"
-#    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-#    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-#    bindsym e exec --no-startup-id i3exit logout, mode "default"
-#    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-#    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-#    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
-
-#    # exit system mode: "Enter" or "Escape"
-#    bindsym Return mode "default"
-#    bindsym Escape mode "default"
-#}
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+bracketleft mode "resize"
@@ -225,28 +210,12 @@ exec_always --no-startup-id "autotiling"
 exec swaymsg "workspace $wssocial; exec discord-screenaudio"
 exec swaymsg "workspace $wschat; exec signal-desktop"
 exec swaymsg "workspace 1"
+#exec_always import-gsettings
 
 # sway bar configuration
 bar {
 	swaybar_command waybar	
 	position top
-
-	bindsym button4 nop
-	bindsym button5 nop
-	strip_workspace_numbers yes
-
-    colors {
-        background #000000
-        statusline #00ff00
-        separator  #000000
-
-#                     	    border  backgr  text
-        focused_workspace  #ffffff #000000 #00FF00
-        active_workspace   #00ff00 #000000 #00FF00
-        inactive_workspace #00ff00 #000000 #00FF00
-        binding_mode       #16a085 #000000 #00FF00
-        urgent_workspace   #16a085 #000000 #00FF00
-    }
 }
 
 #################################
@@ -255,7 +224,7 @@ bar {
 
 # Set inner/outer gaps
 gaps inner 5
-gaps outer 14
+gaps outer 15
 
 # smart gaps and border
 smart_borders on
@@ -264,30 +233,30 @@ smart_borders on
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
+bindsym $mod+Shift+F3 mode "$mode_gaps"
 
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
+	bindsym i      mode "$mode_gaps_inner"
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
+        bindsym $alt+plus  gaps inner current plus 5
+        bindsym $alt+minus gaps inner current minus 5
+        bindsym $alt+0     gaps inner current set 0
 
         bindsym Shift+plus  gaps inner all plus 5
         bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
+	bindsym Shift+0     gaps inner all set 0
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
+	bindsym $alt+plus  gaps outer current plus 5
+	bindsym $alt+minus gaps outer current minus 5
+        bindsym $alt+0     gaps outer current set 0
 
         bindsym Shift+plus  gaps outer all plus 5
         bindsym Shift+minus gaps outer all minus 5
@@ -350,3 +319,8 @@ input type:keyboard {
 # ------ Miscallenous ------ #
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
+# Defining colors         border     bg         text       indicator  child_border
+client.focused        	 	#12151d    #12151d    #abb2bf    #c678dd    #12151d
+client.unfocused        	#1e222a    #1e222a    #abb2bf	 #282c34    #282c34
+client.focused_inactive 	#1e222a    #1e222a    #abb2bf    #282c34    #282c34
+client.urgent	          	#e06c75    #1e222a    #abb2bf    #e06c75    #e06c75
