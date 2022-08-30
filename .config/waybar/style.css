@@ -9,18 +9,18 @@ window {
 }
 
 window#waybar {
-	color: #abb2bf;
-	transition-property: background-color;
-	transition-duration: 0.5s;
+      	transition-property: background-color;
+      	transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 #workspaces button {
 	padding: 0 5px;
 	min-width: 20px;
+	color: #61afef;
 }
 
 #workspaces button.urgent {
@@ -36,7 +36,7 @@ window#waybar.hidden {
 	transition-duration: 0.5s;
 }
 
-#workspaces, #custom-firefox,  #mode, #disk, #battery, #clock, #tray {
+#workspaces, #custom-firefox, #disk, #clock, #tray {
 	color: #61afef;
 	background-color: #1e222a;
 	padding: 0 10px;
@@ -45,21 +45,6 @@ window#waybar.hidden {
 	border-radius: 90px;
 	background-clip: padding-box;
 }
-
-/*
-#battery.full {
-	color:	rgba(0,0,0,0.5);
-}
-
-#battery.warning {
-	color: rgba(0,0,0,0.7);
-}
-
-#battery.low {
-	color: rgba(0,0,0,1);
-	background: rgba(255,0,0,1);
-}
-*/
 
 /*
 	--base00 #c678dd;

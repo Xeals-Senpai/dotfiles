@@ -63,6 +63,6 @@
 		"on-click": "firefox www.google.co.uk",
 		"format-icons": [""],
 		"tooltip": false	
-	}
+	},
 }
 			
