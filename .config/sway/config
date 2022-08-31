@@ -6,6 +6,8 @@
 
 set $mod Mod4
 set $alt Mod1
+set $term kitty
+set $menu rofi -show drun -show-icons -icon-theme "Neonyt-Dark-Icons"
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
@@ -19,13 +21,13 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Shift+Return exec kitty
+bindsym $mod+Shift+Return exec $term
 
 # kill focused window
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+space exec --no-startup-id "rofi -show drun"
+bindsym $mod+space exec $menu
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -324,3 +326,10 @@ client.focused        	 	#12151d    #12151d    #abb2bf    #c678dd    #12151d
 client.unfocused        	#1e222a    #1e222a    #abb2bf	 #282c34    #282c34
 client.focused_inactive 	#1e222a    #1e222a    #abb2bf    #282c34    #282c34
 client.urgent	          	#e06c75    #1e222a    #abb2bf    #e06c75    #e06c75
+
+# Sway idle #
+exec swayidle -w \\
+	timeout 300 'swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000' \\
+	timeout 600 'swaymsg "output * dpms off"' \\
+	resume 'swaymsg "output * dpms on"' \\
+	before-sleep 'swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000'\

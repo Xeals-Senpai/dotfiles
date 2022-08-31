@@ -26,8 +26,8 @@ source ~/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-
 
 ## Alias
 
-alias cls='~/Documents/dotfiles/scripts/alias1.sh'
-alias clear='~/Documents/dotfiles/scripts/alias1.sh'
+alias cls='~/Documents/dotfiles/scripts/neofetch-clear-alias.sh'
+alias clear='~/Documents/dotfiles/scripts/neofetch-clear-alias.sh'
 alias ssh="kitty +kitten ssh"
 
 ## keybindings
