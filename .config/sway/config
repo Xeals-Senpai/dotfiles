@@ -40,7 +40,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Return exec firefox 
 bindsym $mod+F1 exec nemo
 bindsym $alt+1 exec "discord-screenaudio" 
-bindsym $alt+2 exec 'signal-desktop' 
+bindsym $alt+2 exec 'signal-desktop'
+bindsym $alt+m exec 'spotify'
 #bindsym $alt+2 exec "whatsapp-for-linux"
 #bindsym $alt+3 exec "atom"
 #bindsym $alt+4 exec "code"
@@ -216,8 +217,7 @@ exec swaymsg "workspace 1"
 
 # sway bar configuration
 bar {
-	swaybar_command waybar	
-	position top
+	swaybar_command waybar
 }
 
 #################################
@@ -328,8 +328,8 @@ client.focused_inactive 	#1e222a    #1e222a    #abb2bf    #282c34    #282c34
 client.urgent	          	#e06c75    #1e222a    #abb2bf    #e06c75    #e06c75
 
 # Sway idle #
-exec swayidle -w \\
-	timeout 300 'swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000' \\
-	timeout 600 'swaymsg "output * dpms off"' \\
-	resume 'swaymsg "output * dpms on"' \\
-	before-sleep 'swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000'\
+exec swayidle -w \
+	timeout 300 'swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000' \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' 
+

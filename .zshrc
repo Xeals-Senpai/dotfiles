@@ -9,8 +9,8 @@ setopt nobeep                                                   # No beep
 setopt appendhistory                                            # Immediately append history instead of overwriting
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
-setopt appendhistory						# writes all terminal arguments into the specified file location
-setopt promptsubst						# required for manual installation zsh-agnoster-theme
+setopt appendhistory											# writes all terminal arguments into the specified file location
+setopt promptsubst												# required for manual installation zsh-agnoster-theme
 
 ## History
 HISTFILE=~/.config/zsh/.zsh_history
@@ -29,6 +29,9 @@ source ~/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-
 alias cls='~/Documents/dotfiles/scripts/neofetch-clear-alias.sh'
 alias clear='~/Documents/dotfiles/scripts/neofetch-clear-alias.sh'
 alias ssh="kitty +kitten ssh"
+alias vim="nvim"
+alias sudo="sudo "
+alias ls="ls --color=yes"
 
 ## keybindings
 bindkey '^[[A' history-substring-search-up
