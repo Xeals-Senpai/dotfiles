@@ -115,6 +115,7 @@ set $wsweb "Web"
 set $wschat "Chat"
 set $wssocial "Social"
 set $wsgame "Game"
+set $wssteam ""
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -126,11 +127,13 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
+
 bindsym $mod+e workspace $wsdev
 bindsym $mod+z workspace $wsweb
 bindsym $mod+d workspace $wssocial
 bindsym $mod+c workspace $wschat
 bindsym $mod+x workspace $wsgame
+bindsym $mod+F2 workspace $wssteam
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -148,6 +151,7 @@ bindsym $mod+Shift+d move container to workspace $wssocial
 bindsym $mod+Shift+e move container to workspace $wsdev
 bindsym $mod+Shift+c move container to workspace $wschat
 bindsym $mod+Shift+x move container to workspace $wsgame
+bindsym $mod+Shift+F2 move container to workspace $wssteam
 
 # Open specific applications in floating mode
 for_window [class="Clipgrab"] floating enable
@@ -161,7 +165,8 @@ for_window [class="anbox"] floating enable border pixel 3
 for_window [class="Pavucontrol"] floating enable border pixel 5
 for_window [class="jetbrains-studio"] floating enable border normal
 for_window [app_id="rofi"] border pixel 5
-for_window [app_id="kitty"] floating enable border pixel 50
+for_window [app_id="kitty"] floating enable border pixel normal
+for_window [class="Steam"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+period reload
@@ -315,11 +320,14 @@ input type:keyboard {
 }
 
 # ------ open application to workspaces ------ #
-#assign [app_id="de.shorsh.discord-screenaudio"] workspace $wssocial
+assign [class="Steam"] workspace $wssteam
 
 
 # ------ Miscallenous ------ #
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+#exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec swaymsg "move position center; swaymsg resize set 50ppt 75ppt"
+
+
 
 # Defining colors         border     bg         text       indicator  child_border
 client.focused        	 	#12151d    #12151d    #abb2bf    #c678dd    #12151d
@@ -330,6 +338,6 @@ client.urgent	          	#e06c75    #1e222a    #abb2bf    #e06c75    #e06c75
 # Sway idle #
 exec swayidle -w \
 	timeout 300 'swaylock -i "~/Documents/Pictures/darkspace2.jpg" --indicator-radius 150 --indicator --clock --effect-blur 2x2 --effect-vignette 0.5:0.5 -f -c 000000' \
-	timeout 600 'swaymsg "output * dpms off"' \
+	timeout 600 'systemctl suspend' \
 	resume 'swaymsg "output * dpms on"' 
 
