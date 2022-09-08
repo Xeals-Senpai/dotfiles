@@ -9,8 +9,17 @@ window {
 }
 
 window#waybar {
-      	transition-property: background-color;
-      	transition-duration: 0.5s;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+.modules-right {
+	background-color: #1e222a;
+	color: #61afef;
+	border: 3px solid rgba(0,0,0,0);
+	border-radius: 90px;
+	background-clip: padding-box;
+	margin: 2px 4px 5px 4px;
 }
 
 window#waybar.hidden {
@@ -36,14 +45,18 @@ window#waybar.hidden {
 	transition-duration: 0.5s;
 }
 
-#workspaces, #custom-firefox, #disk, #clock, #tray {
+#workspaces, #custom-firefox, #clock {
 	color: #61afef;
 	background-color: #1e222a;
 	padding: 0 10px;
 	margin: 2px 4px 5px 4px;
-	border: 3px solid rgba(0, 0, 0, 0);
+	border: 3px solid rgba(0,0,0,0);
 	border-radius: 90px;
 	background-clip: padding-box;
+}
+
+#pulseaudio, #network, #bluetooth, #disk, #tray {
+	padding: 0 10px;
 }
 
 /*

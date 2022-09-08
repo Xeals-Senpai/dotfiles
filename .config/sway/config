@@ -167,6 +167,7 @@ for_window [class="jetbrains-studio"] floating enable border normal
 for_window [app_id="rofi"] border pixel 5
 for_window [app_id="kitty"] floating enable border pixel normal
 for_window [class="Steam"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+period reload
@@ -276,15 +277,16 @@ mode "$mode_gaps_outer" {
 # opens certain workspaces into the second monitor
 # Laptop Monitor
 workspace 1 output DP-1
-workspace "Chat" output DP-1
-workspace "Social" output DP-1
+workspace $wschat output DP-1
+workspace $wssocial output DP-1
+workspace $wsdev output DP-1
 
 # Second Monitor
 workspace 2 output HDMI-A-1
 workspace 9 output HDMI-A-1
 
 # Third Monitor
-workspace "Web" output DP-2
+workspace $wsweb output DP-2
 workspace 3 output DP-2
 
 
@@ -321,7 +323,7 @@ input type:keyboard {
 
 # ------ open application to workspaces ------ #
 assign [class="Steam"] workspace $wssteam
-
+assign [class="leagueclientux.exe"] workspace $wsgame
 
 # ------ Miscallenous ------ #
 #exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
